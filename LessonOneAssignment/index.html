@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/lesson one styles.css" />
+    <title>  Lesson One - HTML  & CSS</title>
+  </head>
+  <body>
+    <h1>Lesson One - HTML  & CSS</h1>
+        <h2>HTML - Hyper Text Markup Language</h2>
+            <p>HTML provides or sets up the base content (text, numbers) that is observed on a web page. </p>
+            <p>A 'mark up language' is a coding language that uses tags to catergorise or structure the content in a meaningful way.</p>
+            <p>The 'hyper text' refers to the use of clickable links that lets the user jump from one lot of information to another and describes the type of mark up language this is.</p>
+            <h3>HTML elements</h3>
+                <p>Elements are groups of content categorised by tags</p>
+                <p>E.g. [opening tag] [content] [closing tag]</p>
+            <h3> Tags</h3>
+                <p>Have angled brackets < > that mark the start ('opening' tag) and angled brackets with a forward slash < / > that mark end ('closing' tag) of an element.</p>
+                <p>You can have different categories of elements with their associated tags:</p> 
+                <p>Head section with < head > opening tag and < /head > closing tag. Has info like author and title in the address bar - not directly displayed on page. </p>
+                <p>Body section - < body > < / body > part of the html document that will be displayed. </p>
+                <p>Heading element with # level < h1 > opening tag and < /h1 > closing tag. This is the header viewed on top of the page. You can have h1 as most important (largest) all the way up to h6 least important which would usually be used as a subheadings</p>
+                <p>Paragraph element with < p > opening tag and < /p > closing tag. This is the general default text.</p>
+                <p>Image element < img src="ada.jpg" > does not have a closing tag. It doesn't have content but has attributes. src is "source" attribute </p>
+                <p>Tip - you can hover over the tag and click MDR properties in Visual Studio Code to get more information about it.</p>
+                <p>Click this hyperlink: <a href="https://www.washington.edu/accesscomputing/webd2/student/unit2/common_tags.html#:~:text=Tags%20are%20comprised%20of%20elements,a%20closing%20tag%20ends%20it.">Website</a> for some more common HTML tags.</p>
+            <h3>Attributes</h3>
+                <p>Appear in the opening tag and provides more information to the overall element</p>
+                <p>Anchor elements are used for hyperlinks. E.g. href attribute can look like:</p>
+                <p> < a href="www.google.com" > Search < / a ></p>
+                <p>and tells the browser the address in which the link goes to.</p>
+                <p>HTML documents begin with a DOCTYPE declaration which tells the browser which version of HTML the document is written - this document uses HTML 5 which has the declaration of < !DOCTYPE html > </p>
+                <p>html section - < html > and < /html > </html> tells the browser where the document begins and ends</p>
+            
+        <h2>CSS - Cascading Style Sheets</h2>
+            <p>Controls the design aspects like colour, size, styles, fonts, etc. It has rules that are called selectors,properties and values. </p>
+            <h3>Selectors</h3>
+              <p>Which elements does the following rule apply to.</p>
+              <p>E.g. the 'p' in</p>
+              <p>p {
+                    color:red;
+                  } </p>
+              <p>is the selector and means that all the paragraph HTML elements will be coloured red.</p>
+            <h3>Properties</h3>
+              <p>The property what part of the element is being changed. In the above example, the colour is being changed.</p>
+              <p>You can have multiple properties separated by a semi colon</p>
+              <p>E.g.</p>
+              <p>p {
+                color:red;
+                font-size:12px
+              } </p>
+            <h3>Values</h3>
+            <p>The value is what you're telling the property to change to - in the above example, you want the color property to change it to 'red' and you want the font-size property to be 12px.</p>
+            <h3>Methods of CSS styling</h3>
+            <h4>In line styling </h4>
+            <p>Puts the attribute in line with the tag. Messy lines and rarely one style applies to one thing so hard to make changes of the same category/tags. But may be applicable to single document cases ...like emails.</p>
+               <p>E.g. < h1 style =”color: red;” >my first website < / h1 ></p> 
+             <h4> < Style > tag </h4>
+             <p>might end up with 1000 lines of CSS code and not as easily read</p> 
+             <p> < style > </p>
+            <p>{
+              Color: red;
+              }</p>
+            <p> < / style > </p>  
+            <h4>Style sheets linked</h4>
+            <p>Create a separate css document and link it via the < head > </p>
+            <p>E.g.</p>
+            <p>< head ></p>
+            <p>  < meta charset="UTF-8" /></p>
+            <p>  < meta name="viewport" content="width=device-width, initial-scale=1.0" /></p>
+            <p>  < link rel="stylesheet" href="css/lesson one styles.css" /></p>
+            <p>   < title>  Lesson One - HTML  & CSS < / title></p>
+            <p> < / head></p>
+  </body>
+</html>
